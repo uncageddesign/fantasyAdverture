@@ -1,6 +1,26 @@
 public class Player {
+
+
     private String name;
-    private Integer hitPoints;
-    private Integer armourLevel;
-    private String alighnemt;
+    private String alignment;
+
+    public Player(String name, String alignment) {
+        this.name = name;
+        this.alignment = alignment;
+    }
+
+    public void setName(String name) {
+
+        this.name = name;
+    }
+
+    public String getName() {
+
+        return name;
+    }
+
+    public String getAlignment() {
+
+        return alignment;
+    }
 }
