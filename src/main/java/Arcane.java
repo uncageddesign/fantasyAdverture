@@ -4,11 +4,10 @@ public class Arcane {
 
     // Arcane classes: Wizard, Warlock, Bard, Sorcerer, Hexblade
    // Familiar: Cat, Sparrow, Raven, Blink Dog, Bat
-    // Spells: Firebolt, Magic Missile, Acid Arrow, Eldritch Blast, Blight, Vicious Mockery
 
     private String characterType;
     private String familiar;
-    private ArrayList<Spells> spellSlots;
+    private ArrayList<ArcanaSpells> spellSlots;
 
 
     public Arcane(String characterType, String Familiar, ArrayList spells) {

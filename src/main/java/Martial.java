@@ -1,14 +1,14 @@
-public class Melee extends Player {
+public class Martial extends Player {
 
-    // Melee classes: Barbarian, Fighter, Monk
-    // Weapon: Greatsword, Warhammer, Rapier, Crossbow, Fists, Bowstaff
+    // Martial classes: Barbarian, Fighter, Monk, Ranger, Rogue
+    // Weapon: Greatsword, Warhammer, Rapier, Crossbow, Fists, Bowstaff, Longbow
     // Armour: Plate, Chainmail, Leather, Shield, Bracers
 
     private String characterType;
     private String weapon;
     private String armour;
 
-    public Melee(String name, String alignment, String characterType, String weapon, String armour){
+    public Martial(String name, String alignment, String characterType, String weapon, String armour){
         super(name, alignment);
         this.characterType = characterType;
         this.weapon = weapon;
