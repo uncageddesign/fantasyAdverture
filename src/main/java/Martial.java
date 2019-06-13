@@ -1,6 +1,6 @@
 public class Martial extends Player {
 
-    // Martial classes: Barbarian, Fighter, Monk, Ranger, Rogue
+    // Martial classes: Barbarian, Fighter, Monk, Rogue
     // Weapon: Greatsword, Warhammer, Rapier, Crossbow, Fists, Bowstaff, Longbow
     // Armour: Plate, Chainmail, Leather, Shield, Bracers
 
@@ -8,8 +8,8 @@ public class Martial extends Player {
     private String weapon;
     private String armour;
 
-    public Martial(String name, String alignment, String characterType, String weapon, String armour){
-        super(name, alignment);
+    public Martial(String name, String alignment, Integer hitPoints, String characterType, String weapon, String armour){
+        super(name, alignment, hitPoints);
         this.characterType = characterType;
         this.weapon = weapon;
         this.armour = armour;
@@ -17,6 +17,10 @@ public class Martial extends Player {
 
     public String getCharacterType() {
         return characterType;
+    }
+
+    public void takeDamage(Integer damageTaken){
+        this.hitPoints -= damageTaken;
     }
 
 }
